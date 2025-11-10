@@ -1,0 +1,16 @@
+# Archivos temporales / SO
+.DS_Store
+*.log
+
+# Certificados o secretos locales (no versionar en meta)
+*.crt
+*.key
+
+# Repositorios componentes (cada uno lleva su propio git)
+opexia-core-gateway/
+opexia-edge-template/
+opexia-node-*/
+
+# Otros clones o trabajo temporal
+tmp/
+scratch/
