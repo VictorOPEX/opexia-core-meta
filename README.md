@@ -9,7 +9,8 @@ opexia-core-meta/
 ├─ README.md                  # Este archivo: mapa de repos y guías generales
 ├─ ca-mosquitto.crt           # CA compartida para pruebas y staging
 ├─ opexia-core-certs/         # Copias locales de certificados/CA (no se versionan)
-└─ opexia-core-gateway/       # Repo git del gateway maestro (docker-compose, NX-CORE-OPS)
+├─ opexia-core-gateway/       # Repo git del gateway maestro (docker-compose, NX-CORE-OPS)
+└─ opexia-core-edge/          # Repo del gateway EDGE (Node-RED + Mosquitto)
 ```
 
 ## Repositorios componente
@@ -17,7 +18,7 @@ opexia-core-meta/
 | Carpeta                | Repo recomendado                                     | Descripción breve                              |
 |-----------------------|-------------------------------------------------------|------------------------------------------------|
 | `opexia-core-gateway` | `git@github-opex:VictorOPEX/opexia-core-gateway.git`  | Stack Docker CORE (Mosquitto, Node-RED, Influx, Grafana) |
-| *(pendiente)*         | `opexia-edge-template`                                | Plantillas y scripts para gateways EDGE        |
+| `opexia-core-edge`    | `git@github-opex:VictorOPEX/opexia-core-edge.git`     | Stack base EDGE (Mosquitto + Node-RED simulando un nodo) |
 | *(pendiente)*         | `opexia-node-<tipo>`                                  | Firmware/config de nodos físicos (ej. count)   |
 
 > Tip: cuando crees un nuevo stack, clónalo dentro de esta carpeta o usa `git submodule add` si quieres que este meta repo registre la referencia exacta.

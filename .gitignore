@@ -8,6 +8,7 @@
 
 # Repositorios componentes (cada uno lleva su propio git)
 opexia-core-gateway/
+opexia-core-edge/
 opexia-edge-template/
 opexia-node-*/
 
